@@ -1,17 +1,20 @@
 const express = require('express')
 const fileHandler = require('./modules/fileHandler')
+const path = require('path')
 
 const app = express()
 const PORT = 3000
 
-async function startServer() {
+app.use(express.static(path.join(__dirname, 'public')))
+
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'views'))
+
+app.get('/', async (req, res) => {
   const employees = await fileHandler.read()
-  console.log("Employee Data:")
-  console.log(employees)
+  res.render('index', { employees })
+})
 
-  app.listen(PORT, () => {
-    console.log("Server running on http://localhost:3000")
-  })
-}
-
-startServer()
+app.listen(PORT, () => {
+  console.log("Server running on http://localhost:3000")
+})

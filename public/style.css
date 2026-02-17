@@ -1,0 +1,19 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  width: 70%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
