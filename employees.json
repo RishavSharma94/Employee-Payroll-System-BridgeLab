@@ -1,8 +1,29 @@
 [
   {
-    "id": 1,
-    "name": "Ramesh Kumar",
+    "id": 1771406490397,
+    "name": "Rishav Sharma",
+    "department": "CSE",
+    "gender": "Male",
+    "salary": 500000
+  },
+  {
+    "id": 1771406538831,
+    "name": "Divya",
     "department": "IT",
-    "basicSalary": 30000
+    "salary": 80000
+  },
+  {
+    "id": 1771407463201,
+    "name": "rishab",
+    "department": "IT",
+    "salary": 80000
+  },
+  {
+    "id": "1771409183244",
+    "name": "Tejas Yadav",
+    "gender": "Male",
+    "department": "ME",
+    "salary": 700000,
+    "startDate": "Wed Jan 01 2025"
   }
 ]
